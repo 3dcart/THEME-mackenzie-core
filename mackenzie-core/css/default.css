@@ -1333,7 +1333,11 @@ iframe {
 	min-height: 150px;
 }
 
-
+@media(max-width:1199px){
+.top-nav ul li {
+    margin: 0 3px 0 0;
+}
+}
 /* Mobile Header */
 .navbar-header {
     margin:20px auto;
@@ -1360,4 +1364,7 @@ iframe {
     .promos .row > div {
         margin-top: 15px;
     }
+.mailinglist-submit {
+    width: auto;
+}
 }
