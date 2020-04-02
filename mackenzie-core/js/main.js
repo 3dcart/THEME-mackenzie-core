@@ -75,6 +75,11 @@ function mailinglist_response(form, response) {
 
 }
 
+function setLeftWidth() {
+	var new_width = $('.leftNavFixed').outerWidth();
+	$('#navbar-fixed-side').width(new_width); 
+}
+
 function moveMenu() {
     var respWidth = window.innerWidth;
     var ua = navigator.userAgent.toLowerCase();
@@ -132,11 +137,18 @@ jQuery(document).ready(function () {
 });
 
 jQuery(window).load(function () {
+	"use strict";
+	
     moveMenu();
+	setLeftWidth();
 });
 jQuery(window).resize(function () {
+	"use strict";
+	
     moveMenu();
+	setLeftWidth();
 });
+
 
 jQuery(function ($) {
 	$('.navbar .dropdown').hover(function () {
