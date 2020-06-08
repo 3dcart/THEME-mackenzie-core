@@ -2,24 +2,36 @@
 ** Bootstrap over-rides
 */
 
-html, body {
-  height: 100%;
-}
-body, .main-block2 {
+.main-block2 {
   display: flex;
   height: 100%;
   flex-direction: column;
+  min-height: 100vh;
 }
-.group-flex {
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-}
-.page-content, .main-block {
+.page-content {
   flex: 1 0 auto;
 }
 footer {
   flex-shrink: 0;
+}
+.product-items.productList .product-item .img a {
+    position: initial;
+}
+.homepage-blog-posts .post-image-container img {
+    height: 248px;
+}
+@media (max-width: 991px){
+.product-items.productList .product-item .img {
+    width: 32%;
+}
+}
+@media (max-width: 767px){
+.homepage-blog-posts .post-image-container img {
+    height: auto;
+}
+.homepage-blog-posts .post-image-container {
+    min-height: auto;
+}
 }
 
 body {
@@ -727,7 +739,7 @@ span.freeshipping {
 */
 .products-section {
     background-color: #fff;
-    padding: 60px 0;
+    padding: 20px 0;
 }
 .products-section h2 {
     font-family: 'Playfair Display', serif;
