@@ -32,6 +32,9 @@ footer {
 .homepage-blog-posts .post-image-container {
     min-height: auto;
 }
+.modal-backdrop {
+	display: none !important;
+}
 }
 
 body {
